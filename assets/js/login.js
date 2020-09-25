@@ -14,12 +14,9 @@
 
 
 
-    // validasi form
-    let input = $('.input-box');
 
-
-
-    $('.form').submit(function () {
+    $('.form').submit(function (e) {
+        const input = $(e.target).find('.input-box')
         let check = true;
 
         for (let i = 0; i < input.length; i++) {
